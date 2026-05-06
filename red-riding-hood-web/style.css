@@ -1,0 +1,50 @@
+.flex-container{
+   max-width: 960px;
+   display: flex;
+}
+
+
+.container{
+    height: 50px;
+    width: 310px;
+    display: flex;
+    border-radius: 25%;
+    corner-shape: squircle;
+}
+
+
+
+.container2{
+    height: 50px;
+    width: 150px;
+    display: flex;
+    align-self: right;
+    border-radius: 25%;
+    corner-shape: squircle;
+}
+
+
+.container2 span{
+    color: #3B6934;
+    font-family: serif;
+    margin: auto;
+    font-size: medium;
+}
+
+.container span{
+    color: #3B6934;
+    font-family: 'Times New Roman', Times, serif;
+    margin: auto;
+    font-size: medium;
+    font-style: italic;
+}
+
+
+
+h1{
+    color: #3B6934;
+    font-family: sans-serif;
+    text-align: center;
+    vertical-align: middle;
+    font-size: medium;
+}

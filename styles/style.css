@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 50px;
+    padding: 0 100px;
 }
 
 .title{
@@ -12,8 +12,58 @@
     font-size: 1.5rem;
 }
 
+.title:hover{
+    cursor:default;
+}
+
+a {
+  text-decoration: none;
+  font-family: sans-serif;
+  color:#0A3909;
+  position: relative;
+}
+
+a:hover{
+    color: #DF3341;
+}
+
+a::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #0A3909;
+    transition: width 0.25s;
+}
+
+a:hover::before{
+    width: 100%;
+}
+
+ul{
+    list-style: none;
+    
+}
+
+
 p{
     font-family: sans-serif;
     color: black;
     font-size: 16px;
+}
+
+.title {
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+}
+
+.nav-links {
+    display: flex;
+    column-gap: 20px;
+}
+
+.link-item {
+    color:#0A3909;
 }

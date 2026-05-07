@@ -2,7 +2,7 @@
 
 ## Proyecto
 
-Página web de Caperucita Roja con una barra de navigación, separación por capítulos e imágenes que acompañen a la historia. Es una página infantil, así que deberá verse y sentirse
+Página web de Caperucita Roja con una barra de navigación, separación por capítulos e imágenes que acompañen a la historia. Es una página infantil, por lo que deberá verse visualmente llamativa.
 
 ## Primeros pasos
 
@@ -10,4 +10,3 @@ Para empezar este proyecto, lo primero que hice fue generar una web en Stitch. U
 
 ![alt-text](../assets/img/web-red-riding-hood.png "Desired Web")
 
-De esta forma, me he puesto inmediatamente a trabajar en el HTML, preparando la historia y 

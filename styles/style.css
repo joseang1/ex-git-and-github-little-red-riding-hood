@@ -1,3 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: BeVietnamPro-Regular;
+    src: url(/assets/fonts/BeVietnamPro/BeVietnamPro-Regular.ttf);
+}
+
+@font-face {
+    font-family: PlusJakartaSans-VariableFont_wght;
+    src: url(/assets/fonts/PlusJakartaSans/PlusJakartaSans-VariableFont_wght.ttf);
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+
 :root{
     --surface: #fbf9f1;
     --surface-dim: #dcdad2;
@@ -29,14 +51,117 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 100px;
+    min-width: 0px;
+    min-height: 0px;
+    padding: 25px 100px;
     background: rgba(255, 255, 255, 0,7);
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
 }
 
+.title {
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+}
 
+
+.nav-links {
+    display: flex;
+    column-gap: 20px;
+}
+
+
+.link-item {
+    color:#0A3909;
+}
+
+
+.link{
+  text-decoration: none;
+  font-family: sans-serif;
+  color:#0A3909;
+  position: relative;
+}
+
+
+.link:hover{
+    color: #DF3341;
+}
+
+
+.link::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #0A3909;
+    transition: width 0.25s;
+}
+
+
+.link:hover::before{
+    width: 100%;
+}
+
+
+#caperucita{
+    padding-top: 365px;
+    padding-left: 6%;
+}
+
+
+.caperucita{
+    font-family: "PlusJakartaSans-VariableFont_wght";
+    font: bold;
+    color:#1A3C15;
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -0.02rem;
+    cursor: default;
+}
+
+
+.p1{
+    padding: 5% 0;
+    display: flex;
+    width: 100%;
+}
+
+.p1-text{
+    padding-right: 65%;
+    text-align: justify;
+    cursor: default;
+    color: #1A3C15;
+    font-size: 50px;
+}
+
+.p1-text-style{
+    color:#1A3C15;
+    font-size: 25px;
+}
+
+#button-responsive-advance{
+    color: white;
+    background-color: #0A3909;
+    padding-left: 65%;
+    padding: 20px;
+    font-family: BeVietnamPro-Regular;
+    column-width: 70%;
+    border-radius: 25px;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+.button-responsive-advance{
+    padding-left: 6%;
+    padding-bottom: 24%;
+}
 
 .title{
     font-family: 'Times New Roman', Times, serif;
@@ -49,31 +174,6 @@
     cursor:default;
 }
 
-a {
-  text-decoration: none;
-  font-family: sans-serif;
-  color:#0A3909;
-  position: relative;
-}
-
-a:hover{
-    color: #DF3341;
-}
-
-a::before{
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 0;
-    height: 2px;
-    background-color: #0A3909;
-    transition: width 0.25s;
-}
-
-a:hover::before{
-    width: 100%;
-}
 
 ul{
     list-style: none;
@@ -81,21 +181,13 @@ ul{
 
 
 p{
-    font-family: sans-serif;
+    font-family: BeVietnamPro-Regular;
     color: black;
     font-size: 16px;
 }
 
-.title {
-  font-family: "Times New Roman", Times, serif;
-  font-style: italic;
-}
-
-.nav-links {
-    display: flex;
-    column-gap: 20px;
-}
-
-.link-item {
+h2{
+    font-family: BeVietnamPro-Regular;
     color:#0A3909;
 }
+

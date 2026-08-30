@@ -1,149 +1,206 @@
 <!doctype html>
 
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-sale=1.0" />
-    <title>Little Red Riding Hood</title>
-    <link rel="stylesheet" href="styles/style.css" />
-    <link rel="fonts" href="assets/fonts/" />
-  </head>
 
-  <body>
-    <div>
-      <header class="nav-bar">
-        <p class="title">El cuento de la Caperucita Roja</p>
-        <ul class="nav-links">
-          <li class="nav-links">
-            <a href="#" class="link">Caperucita Roja</a>
-          </li>
-          <li class="nav-links">
-            <a href="#" class="link">El bosque</a>
-          </li>
-          <li class="nav-links">
-            <a href="#" class="link">El Lobo</a>
-          </li>
-          <li class="nav-links">
-            <a href="#" class="link">El cazador</a>
-          </li>
-        </ul>
-      </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-sale=1.0" />
+  <title>Little Red Riding Hood</title>
+  <link rel="stylesheet" href="styles/style.css" />
+  <link rel="fonts" href="assets/fonts/" />
+</head>
+
+<header class="nav">
+  <div class="nav__inner">
+    <a class="nav__logo" href="#">Red Riding Hood</a>
+    <nav class="nav__links">
+      <a href="#bosque">El Bosque</a>
+      <a href="#encuentro">El Encuentro</a>
+      <a href="#abuela">Camino a la Abuela</a>
+      <a href="#rescate">El Rescate</a>
+    </nav>
+  </div>
+</header>
+
+<section class="wood" id="bosque">
+  <div class="hero__inner">
+    <div class="hero__text">
+      <h1>Caperucita Roja</h1>
+      <p>Érase una vez una niña muy dulce que vivía cerca de un bosque encantado. Siempre vestía una hermosa capa de
+        color rojo brillante que su abuelita le había regalado&hellip;</p>
+      <a class="btn btn--primary" href="#encuentro">Comenzar la aventura <span aria-hidden="true">↓</span></a>
     </div>
-
-    <main>
-      <div>
-        <section id="caperucita">
-          <h2 class="caperucita">Caperucita Roja</h2>
-          <div class="p1">
-            <div class="p1-text">
-              <p class="p1-text-style">
-                En una casita del bosque vivía una niña que siempre usaba una
-                capuchita de color rojo. Por eso le decían Caperucita Roja
-              </p>
-              <p class="p1-text-style">
-                Caperucita Roja era muy feliz. Vivía con su mamá y le encantaba
-                jugar con las ardillas, las mariposas y los pajarillos.
-              </p>
-              <p class="p1-text-style">
-                Un día, mientras Caperucita jugaba, su mamá la llamó y le contó
-                que su abuelita estaba enferma.
-              </p>
-              <p class="p1-text-style">—¿Por qué no le llevas pastel, frutas y miel?</p>
-              <p class="p1-text-style"> 
-                Caperucita quería mucho a su abuelita, así que aceptó feliz.
-                Antes de salir, su mamá le dijo:
-              </p>
-              <p class="p1-text-style">—No te distraigas jugando, porque el lobo anda rondando.</p>
-            </div>
-            <div class="caperucita_img-container">
-              <!-- <img src="/assets/img/caperucita_and_mom.png.jpg" alt="Caperucita y su mamá" class="caperucita_img"> -->
-            </div>
-          </div>
-        </section>
-        <section class="button-responsive-advance">
-          <a href="#bosque" id="button-responsive-advance"
-            >Continuar la historia &#x2193;</a
-          >
-        </section>
+    <div class="hero__art">
+      <div class="art-card">
+        <span class="art-card__badge" aria-hidden="true">🍃</span>
+        <img class="illustration"
+          src="https://images.pexels.com/photos/158251/pexels-photo-158251.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800"
+          alt="Sendero soleado hacia el bosque encantado" loading="lazy">
       </div>
+    </div>
+  </div>
 
-      <section id="bosque">
-        <h2>El bosque</h2>
-        <p>
-          Caperucita se fue por el camino, pensando en su abuelita y cantando:
-        </p>
-        <p>—Voy con mi canasta llena, para mi abuelita buena.</p>
-        <p>
-          Pero en el camino observó una pradera que estaba llena de lindas
-          flores.
-        </p>
-        <p>¡Qué flores tan bonitas! Se las llevaré a mi abuelita.</p>
-        <p>De pronto, un lobo se apareció.</p>
-        <p>—¿A dónde vas tan solita, linda Caperucita?</p>
-        <p>
-          —Voy a casa de mi abuelita a llevarle frutas y miel, y un poquito de
-          pastel —contestó la niña.
-        </p>
-        <p>
-          —Yo conozco un buen atajo para llegar sin trabajo —le dijo el lobo, y
-          le señaló un camino.
-        </p>
-        <p>
-          A Caperucita no le pareció tan corto, porque tuvo que andar mucho
-          rato.
-        </p>
-      </section>
+  <button class="scroll-chip" aria-hidden="true">▲</button>
 
-      <section id="lobo">
-        <h2>El Lobo</h2>
-        <p>Cuando por fin llegó, llamó a la puerta.</p>
-        <p>
-          —¿Eres Caperucita? Pasa, hijita —le contestó su abuelita con una voz
-          muy rara.
-        </p>
-        <p>
-          El lobo había tomado un atajo, había encerrado a la abuelita en el
-          armario y se había disfrazado como ella.
-        </p>
-        <p>
-          Caperucita se acercó para darle las flores y el pastel, con las frutas
-          y la miel.
-        </p>
-        <p>
-          —Abuelita, abuelita, ¿por qué tienes los ojos tan grandes? —le
-          preguntó
-        </p>
-        <p>—¡Para verte mejooooor! —le contestó el malvado lobo.</p>
-        <p>—¿Pero por qué tienes las orejas tan grandes?</p>
-        <p>—¡Para oírte mejooooor!</p>
-        <p>—¿Y por qué tienes la nariz tan grande?</p>
-        <p>—¡Para olerte mejooooor!</p>
-        <p>Entonces, Caperucita le preguntó:</p>
-        <p>—¿Pero por qué tienes la boca tan grande?</p>
-        <p>
-          —¡Para comerte mejooooor! —gritó el lobo, y se abalanzó sobre ella sin
-          darle tiempo ni de gritar.
-        </p>
-      </section>
+  <div class="recado">
+    <span class="eyebrow">Camino al Bosque</span>
+    <div class="recado__grid">
+      <div class="recado__text">
+        <h2>Un Recado Especial</h2>
+        <p>Su madre le pidió: &ldquo;Lleva esta cesta con pasteles y miel a tu abuelita, que está enferma. Pero ten
+          cuidado, Caperucita, no te salgas del camino ni hables con extraños.&rdquo;</p>
+        <p>La niña prometió ser obediente, pero el bosque estaba tan lleno de flores hermosas que no pudo evitar
+          detenerse a recoger algunas margaritas para alegrar el día de su abuela.</p>
+      </div>
+      <div class="recado__gallery">
+        <div class="tile tile--wide">
+          <img class="illustration"
+            src="https://images.pexels.com/photos/9534528/pexels-photo-9534528.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=600"
+            alt="Mano recogiendo una margarita en un campo soleado" loading="lazy">
+        </div>
+        <div class="tile tile--soft">
+          <span class="tile__icon" aria-hidden="true">👑</span>
+          <span>Cesta de miel</span>
+        </div>
+        <div class="tile tile--soft">
+          <span class="tile__icon" aria-hidden="true">🌼</span>
+          <span>Margaritas frescas</span>
+        </div>
+        <div class="tile tile--basket">
+          <img class="illustration"
+            src="https://images.pexels.com/photos/27893013/pexels-photo-27893013.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=600"
+            alt="Cesta de mimbre con pan y fruta" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-      <section id="cazador">
-        <h2>El cazador</h2>
-        <p>
-          Luego de comerse a Caperucita, el lobo se echó a dormir la siesta.
-        </p>
-        <p>
-          Felizmente un cazador que pasaba por ahí escuchó los gritos de la
-          abuelita.
-        </p>
-        <p>
-          El cazador abrió la barriga del lobo para rescatar a Caperucita. Luego
-          se la rellenó con piedras y echó al lobo fuera de la casa.
-        </p>
-        <p>
-          Y al final los tres se sentaron en la mesa para comer pastel, frutas y
-          miel.
-        </p>
-      </section>
-    </main>
-  </body>
+<section class="section encuentro" id="encuentro">
+  <div class="encuentro__grid">
+    <div class="encuentro__text">
+      <h2>El Encuentro Sombrío</h2>
+      <p class="quote-plain">&ldquo;¿A dónde vas, pequeña niña?&rdquo;, preguntó el Lobo Feroz con una voz fingidamente
+        amable que ocultaba sus oscuras intenciones.</p>
+      <div class="dark-card">
+        <p>Caperucita, sin saber que los lobos pueden ser muy astutos, le contó que iba a casa de su abuela. El lobo,
+          con un plan malvado, le sugirió ir por el camino más largo mientras él corría por el atajo.</p>
+      </div>
+      <span class="tag tag--danger"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          stroke-width="2">
+          <path d="M12 2 2 21h20L12 2z" />
+          <path d="M12 9v5" />
+          <circle cx="12" cy="17" r="0.5" fill="currentColor" />
+        </svg> Peligro al acecho</span>
+    </div>
+    <div class="encuentro__art">
+      <img class="illustration"
+        src="https://images.pexels.com/photos/20407411/pexels-photo-20407411.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800"
+        alt="Retrato de un lobo gris en el bosque" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section class="section casita" id="abuela">
+  <div class="casita__grid">
+    <div class="tile tile--house">
+      <img class="illustration"
+        src="https://images.pexels.com/photos/12319511/pexels-photo-12319511.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800"
+        alt="Casita de madera rodeada de bosque" loading="lazy">
+    </div>
+    <div class="casita__card">
+      <h2>La Casita del Bosque</h2>
+      <p>La casa de la abuela estaba rodeada de tres grandes robles. El lobo llegó primero, se disfrazó de la abuela y
+        se metió en la cama, esperando pacientemente a su merienda&hellip;</p>
+      <div class="testimonial">
+        <span class="avatar" aria-hidden="true">🏡</span>
+        <div>
+          <strong>Llegada a la casa</strong>
+          <span>Destino alcanzado</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section rescate" id="rescate">
+  <div class="rescate__card">
+    <div class="rescate__text">
+      <h2>&ldquo;¡Qué dientes más grandes tienes!&rdquo;</h2>
+      <p>Cuando Caperucita entró, notó algo extraño. &ldquo;Abuelita, qué orejas tan grandes tienes!&rdquo;, dijo.
+        &ldquo;Para oírte mejor&rdquo;, respondió el lobo. &ldquo;¡Pero qué dientes tan grandes tienes!&rdquo;, exclamó
+        la niña con temor.</p>
+      <div class="callout">
+        <span class="callout__label">El clímax del cuento</span>
+        <p>&ldquo;¡Para comerte mejor!&rdquo;, gritó el lobo saltando de la cama.</p>
+      </div>
+    </div>
+    <div class="rescate__art">
+      <img class="illustration illustration--flat"
+        src="https://images.pexels.com/photos/16067224/pexels-photo-16067224.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800"
+        alt="Puerta de madera abierta de una cabaña con luz cálida" loading="lazy">
+      <div class="floating-card">
+        <span class="floating-card__icon" aria-hidden="true">📍</span>
+        <strong>¡Un héroe aparece!</strong>
+        <p>El valiente cazador escuchó los gritos y entró corriendo para salvar a Caperucita y a su abuela.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section final">
+  <span class="heart" aria-hidden="true">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path
+        d="M12 21s-7.5-4.9-10-9.3C.3 8 2 4 6 4c2 0 3.6 1.2 4.5 2.7C11.4 5.2 13 4 15 4c4 0 5.7 4 4 7.7C19.5 16.1 12 21 12 21z" />
+    </svg>
+  </span>
+  <h2>Final Feliz</h2>
+  <p>El cazador espantó al lobo para siempre. La abuelita salió sana y salva de su escondite y los tres merendaron los
+    ricos pasteles y la miel que Caperucita traía en su cesta.</p>
+  <div class="final__icons">
+    <span class="badge" aria-hidden="true">
+      <svg viewBox="0 0 60 60">
+        <circle cx="30" cy="30" r="30" fill="#5a3a1e" />
+        <circle cx="30" cy="24" r="14" fill="#c9843f" />
+        <rect x="26" y="34" width="8" height="18" fill="#e8b978" />
+      </svg>
+    </span>
+    <span class="badge" aria-hidden="true">
+      <svg viewBox="0 0 60 60">
+        <circle cx="30" cy="30" r="30" fill="#1e3a1c" />
+        <polygon points="30,8 45,52 15,52" fill="#2f6b3f" />
+        <polygon points="30,20 40,52 20,52" fill="#3f814f" />
+      </svg>
+    </span>
+  </div>
+</section>
+
+<section class="moraleja">
+  <div class="moraleja__inner">
+    <svg class="moraleja__watermark" viewBox="0 0 200 200" aria-hidden="true">
+      <path d="M100 10 L180 40 V95 C180 145 145 175 100 190 C55 175 20 145 20 95 V40 Z" fill="none" stroke="#fff"
+        stroke-width="4" opacity="0.15" />
+      <path d="M70 100 L92 122 L134 78" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round"
+        stroke-linejoin="round" opacity="0.15" />
+    </svg>
+    <h2>La Moraleja</h2>
+    <p>&ldquo;Aprende, querida Caperucita, que debemos escuchar siempre los consejos de mamá y no confiar en los
+      desconocidos, por muy amables que parezcan.&rdquo;</p>
+    <a class="btn btn--light" href="#">Lo que aprendí: Seguridad y Sabiduría</a>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer__inner">
+    <span class="footer__brand">Enchanted Forest Tales</span>
+    <span class="footer__copy">&copy; 2026 Enchanted Forest Tales. All rights reserved.</span>
+    <nav class="footer__links">
+      <a href="#">Forest Map</a>
+      <a href="#">Story Settings</a>
+      <a href="#">Helpful Woodsman</a>
+    </nav>
+  </div>
+</footer>
+
 </html>
